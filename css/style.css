@@ -1,0 +1,173 @@
+:root {
+  --main-color: #212121;
+  --secondary-color: #757575;
+  --brand-blue: #2196f3;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-color, black);
+  font-size: 14px;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  color: var(--brand-blue, blue);
+  font-weight: 700;
+  font-size: 26px;
+}
+.logo-black {
+  color: black;
+}
+.logo-white {
+  color: #ffffff;
+}
+.nav-links {
+  text-align: center;
+  color: var(--main-color);
+}
+.nav-links :hover,
+.nav-links :focus {
+  color: var(--brand-blue, blue);
+}
+
+.nav-contact {
+  color: var(--secondary-color, grey);
+  text-align: right;
+}
+
+.nav-contact:hover,
+.nav-contact:focus {
+  color: var(--brand-blue, blue);
+}
+.header-background {
+  background-position: 0px 0px;
+  background-size: 1600px 80px;
+}
+
+.main-header {
+  background-color: #2f303a;
+  background-size: 1600px 600px;
+  background-position: 0px 80px;
+  color: #ffffff;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0, 06em;
+  text-transform: uppercase;
+}
+.button.order {
+  top: 440px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0, 06em;
+  color: #ffffff;
+  text-transform: none;
+  background-size: 200px 50px;
+  background-color: var(--brand-blue, blue);
+  border-radius: 4px;
+}
+
+.first-section {
+  line-height: 1.7;
+  letter-spacing: 0, 03em;
+  color: var(--secondary-color, grey);
+}
+.first-section-header {
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0, 03em;
+  color: var(--main-color, black);
+  text-transform: uppercase;
+}
+.section-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0, 03em;
+  text-align: center;
+}
+.our-team {
+  background-color: #f5f4fa;
+  background-size: 1600px 648px;
+}
+.card {
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--secondary-color, grey);
+}
+.card-header {
+  font-weight: 500;
+  color: var(--main-color, black);
+}
+.section-footer {
+  background-color: #2f303a;
+  font-weight: 400;
+}
+.footer-address {
+  font-style: normal;
+  line-height: 1.7;
+  color: #ffffff;
+}
+.footer-contact {
+  font-weight: 400;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--brand-blue, blue);
+}
+
+.portfolio-main {
+  border-top: #ececec;
+  background: #e5e5e5;
+}
+.product-buttons {
+  text-align: center;
+}
+.button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--main-color, black);
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: var(--brand-blue, blue);
+  border-color: var(--brand-blue, blue);
+}
+.product-card {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  /* font-weight: 400; */
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--secondary-color, grey);
+}
+.product-card-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--main-color, black);
+}
