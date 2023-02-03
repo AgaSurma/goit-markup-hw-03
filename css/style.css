@@ -3,18 +3,54 @@
   --secondary-color: #757575;
   --brand-blue: #2196f3;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color, black);
   font-size: 14px;
 }
-
+nav {
+  display: flex;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  height: 80px;
+}
+header {
+  border-bottom: 1px solid #ececec;
+  margin: 0px;
+  display: block;
+}
+.nav-links {
+  display: flex;
+}
+.link {
+  display: block;
+  align-items: baseline;
+}
+.nav-links > .link:not(:last-child) {
+  margin-right: 10px;
+}
 ul {
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul > .li:not(:last-child){
+  margin: 0px 30px 0px 0px;
 }
 a {
   text-decoration: none;
   font-weight: 500;
+  justify-content: center;
 }
 
 .logo {
@@ -55,15 +91,19 @@ a {
 .main-header {
   background-color: #2f303a;
   background-size: 1600px 600px;
-  background-position: 0px 80px;
   color: #ffffff;
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   text-align: center;
   letter-spacing: 0, 06em;
   text-transform: uppercase;
+  margin: 0px;
+  display: block;
+  padding: 94px;
+}
+h1 {
+  margin: 0px;
 }
 .button.order {
   top: 440px;
@@ -78,12 +118,16 @@ a {
   background-size: 200px 50px;
   background-color: var(--brand-blue, blue);
   border-radius: 4px;
+  width: 200px;
+  height: 50px;
 }
 
 .first-section {
   line-height: 1.7;
   letter-spacing: 0, 03em;
   color: var(--secondary-color, grey);
+  padding: 94px;
+  margin: 0px;
 }
 .first-section-header {
   font-weight: 700;
@@ -99,9 +143,13 @@ a {
   letter-spacing: 0, 03em;
   text-align: center;
 }
+.second-section {
+  padding-bottom: 94px;
+}
 .our-team {
   background-color: #f5f4fa;
   background-size: 1600px 648px;
+  padding: 94px;
 }
 .card {
   background-color: #ffffff;
