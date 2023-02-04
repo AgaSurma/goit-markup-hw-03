@@ -12,6 +12,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color, black);
   font-size: 14px;
+
 }
 nav {
   display: flex;
@@ -21,11 +22,10 @@ nav {
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
-  height: 80px;
+  margin: 0px 200px 0px 200px;
 }
 header {
   border-bottom: 1px solid #ececec;
-  margin: 0px;
   display: block;
 }
 .nav-links {
@@ -42,7 +42,7 @@ ul {
   list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 ul > .li:not(:last-child){
   margin: 0px 30px 0px 0px;
@@ -100,10 +100,10 @@ a {
   text-transform: uppercase;
   margin: 0px;
   display: block;
-  padding: 94px;
+  padding: 94px 0px 94px 0px;
 }
 h1 {
-  margin: 0px;
+ margin: 0px 200px 0px 200px;
 }
 .button.order {
   top: 440px;
@@ -126,7 +126,14 @@ h1 {
   line-height: 1.7;
   letter-spacing: 0, 03em;
   color: var(--secondary-color, grey);
-  padding: 94px;
+  padding: 94px 0px 94px 0px;
+  align-content: center;
+
+}
+.articles > li:not(:last-child) {
+  margin-right: 10px;
+}
+.articles{
   margin: 0px;
 }
 .first-section-header {
@@ -144,13 +151,25 @@ h1 {
   text-align: center;
 }
 .second-section {
-  padding-bottom: 94px;
+  padding:94
+  align-content: center;
+  padding: 94px 0px 94px 0px;
+
+}
+.second-section>ul>li:not(:last-child){
+  margin-right: 10px;
 }
 .our-team {
   background-color: #f5f4fa;
   background-size: 1600px 648px;
-  padding: 94px;
+  align-content: center;
+  padding: 94px 0px 94px 0px;
 }
+ul>.card:not(:last-child){
+   margin-right: 10px;
+}
+
+
 .card {
   background-color: #ffffff;
   font-size: 16px;
@@ -165,11 +184,17 @@ h1 {
 .section-footer {
   background-color: #2f303a;
   font-weight: 400;
+  padding: 94px 0px 94px 0px;
 }
 .footer-address {
   font-style: normal;
   line-height: 1.7;
   color: #ffffff;
+  margin: 0px 200px 0px 200px;
+}
+.section-footer>.logo{
+  margin: 0px 200px 0px 200px;
+  padding-bottom: 20px;
 }
 .footer-contact {
   font-weight: 400;
