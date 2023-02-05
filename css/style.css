@@ -23,6 +23,9 @@ nav {
   max-width: 1200px;
   margin: 0px 200px 0px 200px;
 }
+.container > .logo {
+  margin-left: 15px;
+}
 header {
   border-bottom: 1px solid #ececec;
   display: block;
@@ -88,8 +91,8 @@ a {
 }
 
 .main-header {
-  background-color: #2f303a;
   background-size: 1600px 600px;
+  background-color: #2f303a;
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
@@ -97,9 +100,8 @@ a {
   text-align: center;
   letter-spacing: 0, 06em;
   text-transform: uppercase;
-  margin: 0px;
-  display: block;
   padding: 94px 0px 94px 0px;
+  align-content: center;
 }
 h1 {
   margin: 0px 200px 0px 200px;
@@ -109,8 +111,6 @@ h1 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0, 06em;
   color: #ffffff;
   text-transform: none;
@@ -147,6 +147,9 @@ h1 {
   line-height: 1.2;
   letter-spacing: 0, 03em;
   text-align: center;
+  margin: 0px 200px 50px 200px;
+  max-width: 1200px;
+  align-content: center;
 }
 .second-section {
   align-content: center;
@@ -185,10 +188,10 @@ ul > .card:not(:last-child) {
   font-style: normal;
   line-height: 1.7;
   color: #ffffff;
-  margin: 0px 200px 0px 200px;
+  margin: 0px 200px 0px 215px;
 }
 .section-footer > .logo {
-  margin: 0px 200px 0px 200px;
+  margin: 0px 200px 0px 215px;
   padding-bottom: 20px;
 }
 .footer-contact {
@@ -215,7 +218,7 @@ ul > .card:not(:last-child) {
 .product-buttons > ul > li:not(:last-child) {
   margin-right: 10px;
 }
-. .product-buttons > ul > .button {
+.button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -223,11 +226,12 @@ ul > .card:not(:last-child) {
   text-align: center;
   color: var(--main-color, black);
   cursor: pointer;
-  /* background-color: #F5F4FA; */
+  padding: 10px;
+  border-radius: 4px solid var(--main-color, black);
+  border-radius: 4px;
 }
 .button:hover,
 .button:focus {
-  border-radius: 4px;
   color: #ffffff;
   background-color: var(--brand-blue, blue);
   border-color: var(--brand-blue, blue);
@@ -250,14 +254,14 @@ ul > .card:not(:last-child) {
   border-top: #ececec;
   margin: 0px 200px 0px 200px;
 }
-.section-products>ul>li>h3{
+.section-products > ul > li > h3 {
   padding-left: 15px;
 }
-.section-products>ul>li>p{
+.section-products > ul > li > p {
   padding-left: 15px;
 }
-.section-products>ul{
+.section-products > ul {
   display: flex;
   flex-wrap: wrap;
-row-gap: 15px;
+  row-gap: 15px;
 }
