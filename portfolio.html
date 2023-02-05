@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -14,23 +15,32 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>#Portfolio</title>
   </head>
-   <header class="header-background">
-      <nav class="container">
-        <a class="logo" href="/">Web<span class="logo-black">Studio</span> </a>
+  <body>
+    <header class="header-background container">
+      <nav>
+        <ul>
+          <li>
+            <a class="logo" href="/"
+              >Web<span class="logo-black">Studio</span>
+            </a>
+          </li>
+          <li class="nav-links"><a href="/index.html">Agencja</a></li>
+          <li class="nav-links"><a href="/portfolio.html">Portfolio</a></li>
+          <li class="nav-links"><a href="/">Kontakt</a></li>
+          <li>
+            <a class="nav-contact" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
 
-        <ul class="nav-links">
-          <li class="link"><a href="/index.html">Agencja</a></li>
-          <li class="link"><a href="/portfolio.html">Portfolio</a></li>
-          <li class="link"><a href="/">Kontakt</a></li>
+          <li>
+            <a class="nav-contact" href="tel:48111111111">+48 111 111 111</a>
+          </li>
         </ul>
-      
-      <a class="nav-contact" href="mailto:info@devstudio.com"
-        >info@devstudio.com</a
-      >
-      <a class="nav-contact" href="tel:48111111111">+48 111 111 111</a>
-    </nav></header>
-    <main class="portfolio-main">
-      <section class="product-buttons">
+      </nav>
+    </header>
+    <main class="portfolio-main section">
+      <section class="product-buttons container">
         <ul>
           <li><button class="button">Wszystkie</button></li>
           <li><button class="button">Strony</button></li>
@@ -39,8 +49,8 @@
           <li><button class="button">Marketing</button></li>
         </ul>
       </section>
-      <section class="section-products container">
-        <ul>
+      <section class="section-products">
+        <ul class="container">
           <li class="product-card">
             <img
               src="./images/img-0.jpg"
@@ -136,10 +146,8 @@
         </ul>
       </section>
     </main>
-    <footer class="section-footer">
-      <a class="logo" href="/">Web<span class="logo-white">Studio</span></a>
-
-      <address class="footer-address">
+    <footer class="section-footer section">
+      <address class="footer-address container"><a class="logo" href="/">Web<span class="logo-white">Studio</span></a><br>
         m. Warszawa, Aleje Jerozolimskie 21<br />
         <a class="footer-contact" href="mailto:info@devstudio.com"
           >info@devstudio.com</a

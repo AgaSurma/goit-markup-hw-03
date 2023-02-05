@@ -3,58 +3,33 @@
   --secondary-color: #757575;
   --brand-blue: #2196f3;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color, black);
   font-size: 14px;
-}
-nav {
-  display: flex;
+  display: block;
 }
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0px 200px 0px 200px;
+  width: 1200px;
+  margin: auto;
 }
-.container > .logo {
-  margin-left: 15px;
-}
-header {
-  border-bottom: 1px solid #ececec;
-  display: block;
-}
-.nav-links {
-  display: flex;
-}
-.link {
-  display: block;
-  align-items: baseline;
-}
-.nav-links > .link:not(:last-child) {
-  margin-right: 10px;
+.section {
+  padding: 94px 0px;
 }
 ul {
   list-style-type: none;
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-evenly;
+  /* padding: 94px 0px 94px 0px; */
 }
-ul > .li:not(:last-child) {
-  margin: 0px 30px 0px 0px;
+header {
+  border-bottom: 1px solid #ececec;
 }
 a {
   text-decoration: none;
   font-weight: 500;
-  justify-content: center;
 }
-
 .logo {
   font-family: "Raleway", sans-serif;
   color: var(--brand-blue, blue);
@@ -85,14 +60,13 @@ a {
 .nav-contact:focus {
   color: var(--brand-blue, blue);
 }
-.header-background {
-  background-position: 0px 0px;
-  background-size: 1600px 80px;
+h1{
+  width: 1200px;
+  margin: auto;
 }
-
 .main-header {
-  background-size: 1600px 600px;
   background-color: #2f303a;
+  display: block;
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
@@ -100,39 +74,26 @@ a {
   text-align: center;
   letter-spacing: 0, 06em;
   text-transform: uppercase;
-  padding: 94px 0px 94px 0px;
-  align-content: center;
-}
-h1 {
-  margin: 0px 200px 0px 200px;
 }
 .button.order {
   top: 440px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+  align-items: center;
+  text-align: center;
   letter-spacing: 0, 06em;
   color: #ffffff;
   text-transform: none;
   background-size: 200px 50px;
   background-color: var(--brand-blue, blue);
   border-radius: 4px;
-  width: 200px;
-  height: 50px;
 }
 
 .first-section {
   line-height: 1.7;
   letter-spacing: 0, 03em;
   color: var(--secondary-color, grey);
-  padding: 94px 0px 94px 0px;
-  align-content: center;
-}
-.articles > li:not(:last-child) {
-  margin-right: 10px;
-}
-.articles {
-  margin: 0px;
 }
 .first-section-header {
   font-weight: 700;
@@ -147,27 +108,11 @@ h1 {
   line-height: 1.2;
   letter-spacing: 0, 03em;
   text-align: center;
-  margin: 0px 200px 50px 200px;
-  max-width: 1200px;
-  align-content: center;
-}
-.second-section {
-  align-content: center;
-  padding: 94px 0px 94px 0px;
-}
-.second-section > ul > li:not(:last-child) {
-  margin-right: 10px;
 }
 .our-team {
   background-color: #f5f4fa;
   background-size: 1600px 648px;
-  align-content: center;
-  padding: 94px 0px 94px 0px;
 }
-ul > .card:not(:last-child) {
-  margin-right: 10px;
-}
-
 .card {
   background-color: #ffffff;
   font-size: 16px;
@@ -182,17 +127,11 @@ ul > .card:not(:last-child) {
 .section-footer {
   background-color: #2f303a;
   font-weight: 400;
-  padding: 94px 0px 94px 40px;
 }
 .footer-address {
   font-style: normal;
   line-height: 1.7;
   color: #ffffff;
-  margin: 0px 200px 0px 215px;
-}
-.section-footer > .logo {
-  margin: 0px 200px 0px 215px;
-  padding-bottom: 20px;
 }
 .footer-contact {
   font-weight: 400;
@@ -204,19 +143,14 @@ ul > .card:not(:last-child) {
   color: var(--brand-blue, blue);
 }
 
-.product-buttons {
-  font-size: 16px;
-  text-align: center;
-  margin: 0px 200px 0px 200px;
-  padding: 94px 0px 94px 0px;
-  max-width: 1200px;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  font-weight: 500;
+.portfolio-main {
+  border-top: #ececec;
 }
-.product-buttons > ul > li:not(:last-child) {
-  margin-right: 10px;
+.product-buttons > ul {
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+ 
 }
 .button {
   font-family: "Roboto", sans-serif;
@@ -226,12 +160,12 @@ ul > .card:not(:last-child) {
   text-align: center;
   color: var(--main-color, black);
   cursor: pointer;
-  padding: 10px;
-  border-radius: 4px solid var(--main-color, black);
-  border-radius: 4px;
+   padding: 5px 10px;
+   border: 4px solid #F5F4FA;
 }
 .button:hover,
 .button:focus {
+  border-radius: 4px;
   color: #ffffff;
   background-color: var(--brand-blue, blue);
   border-color: var(--brand-blue, blue);
@@ -240,6 +174,7 @@ ul > .card:not(:last-child) {
   box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #eeeeee;
+  /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.9;
   color: var(--secondary-color, grey);
@@ -250,18 +185,7 @@ ul > .card:not(:last-child) {
   line-height: 2;
   color: var(--main-color, black);
 }
-.section-products {
-  border-top: #ececec;
-  margin: 0px 200px 0px 200px;
-}
-.section-products > ul > li > h3 {
-  padding-left: 15px;
-}
-.section-products > ul > li > p {
-  padding-left: 15px;
-}
-.section-products > ul {
-  display: flex;
+.section-products > .container {
   flex-wrap: wrap;
-  row-gap: 15px;
+  gap: 15px;
 }
