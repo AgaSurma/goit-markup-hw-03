@@ -12,7 +12,6 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color, black);
   font-size: 14px;
-
 }
 nav {
   display: flex;
@@ -44,7 +43,7 @@ ul {
   align-items: center;
   justify-content: space-evenly;
 }
-ul > .li:not(:last-child){
+ul > .li:not(:last-child) {
   margin: 0px 30px 0px 0px;
 }
 a {
@@ -103,7 +102,7 @@ a {
   padding: 94px 0px 94px 0px;
 }
 h1 {
- margin: 0px 200px 0px 200px;
+  margin: 0px 200px 0px 200px;
 }
 .button.order {
   top: 440px;
@@ -128,12 +127,11 @@ h1 {
   color: var(--secondary-color, grey);
   padding: 94px 0px 94px 0px;
   align-content: center;
-
 }
 .articles > li:not(:last-child) {
   margin-right: 10px;
 }
-.articles{
+.articles {
   margin: 0px;
 }
 .first-section-header {
@@ -151,12 +149,10 @@ h1 {
   text-align: center;
 }
 .second-section {
-  padding:94
   align-content: center;
   padding: 94px 0px 94px 0px;
-
 }
-.second-section>ul>li:not(:last-child){
+.second-section > ul > li:not(:last-child) {
   margin-right: 10px;
 }
 .our-team {
@@ -165,10 +161,9 @@ h1 {
   align-content: center;
   padding: 94px 0px 94px 0px;
 }
-ul>.card:not(:last-child){
-   margin-right: 10px;
+ul > .card:not(:last-child) {
+  margin-right: 10px;
 }
-
 
 .card {
   background-color: #ffffff;
@@ -184,7 +179,7 @@ ul>.card:not(:last-child){
 .section-footer {
   background-color: #2f303a;
   font-weight: 400;
-  padding: 94px 0px 94px 0px;
+  padding: 94px 0px 94px 40px;
 }
 .footer-address {
   font-style: normal;
@@ -192,7 +187,7 @@ ul>.card:not(:last-child){
   color: #ffffff;
   margin: 0px 200px 0px 200px;
 }
-.section-footer>.logo{
+.section-footer > .logo {
   margin: 0px 200px 0px 200px;
   padding-bottom: 20px;
 }
@@ -206,14 +201,21 @@ ul>.card:not(:last-child){
   color: var(--brand-blue, blue);
 }
 
-.portfolio-main {
-  border-top: #ececec;
-  background: #e5e5e5;
-}
 .product-buttons {
+  font-size: 16px;
   text-align: center;
+  margin: 0px 200px 0px 200px;
+  padding: 94px 0px 94px 0px;
+  max-width: 1200px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
 }
-.button {
+.product-buttons > ul > li:not(:last-child) {
+  margin-right: 10px;
+}
+. .product-buttons > ul > .button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -221,6 +223,7 @@ ul>.card:not(:last-child){
   text-align: center;
   color: var(--main-color, black);
   cursor: pointer;
+  /* background-color: #F5F4FA; */
 }
 .button:hover,
 .button:focus {
@@ -233,7 +236,6 @@ ul>.card:not(:last-child){
   box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #eeeeee;
-  /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.9;
   color: var(--secondary-color, grey);
@@ -243,4 +245,19 @@ ul>.card:not(:last-child){
   font-size: 18px;
   line-height: 2;
   color: var(--main-color, black);
+}
+.section-products {
+  border-top: #ececec;
+  margin: 0px 200px 0px 200px;
+}
+.section-products>ul>li>h3{
+  padding-left: 15px;
+}
+.section-products>ul>li>p{
+  padding-left: 15px;
+}
+.section-products>ul{
+  display: flex;
+  flex-wrap: wrap;
+row-gap: 15px;
 }
