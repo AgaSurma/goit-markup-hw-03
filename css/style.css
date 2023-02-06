@@ -210,7 +210,13 @@ body {
   font-size: 18px;
   line-height: 2;
   color: var(--main-color, black);
+  margin-left: 15px;
 }
+.product-card-property{
+  margin-left: 15px;
+}
+ 
+
 .section-products > .container {
   flex-wrap: wrap;
   gap: 15px;
