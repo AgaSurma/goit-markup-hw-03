@@ -136,6 +136,9 @@ body {
   line-height: 1.7;
   color: #ffffff;
 }
+.address{
+margin: 20px 0px 10px 0px;
+}
 .footer-contact {
   font-weight: 400;
   line-height: 1.7;
