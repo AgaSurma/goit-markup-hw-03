@@ -23,9 +23,17 @@ body {
   align-items: center;
   padding: 0;
 }
+.nav-list {
+  list-style-type: none;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+}
 
 .header-background {
   border-bottom: 1px solid #ececec;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -34,6 +42,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   text-decoration: none;
+  margin-right: 93px;
 }
 .logo-black {
   color: black;
@@ -42,29 +51,37 @@ body {
   color: #ffffff;
 }
 .nav-links {
-  text-align: center;
   color: var(--main-color, black);
   text-decoration: none;
 }
 .link {
   color: #212121;
   text-decoration: none;
+  margin-right: 50px;
 }
 .nav-links :hover,
 .nav-links :focus {
   color: var(--brand-blue, blue);
 }
-
+.nav-list-contacts{
+  align-items: center;
+  list-style: none;
+}
 .nav-contact {
   color: var(--secondary-color, grey);
-  text-align: right;
   text-decoration: none;
+  margin: 0px 50px;
 }
 
 .nav-contact:hover,
 .nav-contact:focus {
   color: var(--brand-blue, blue);
 }
+.nav-list-contacts{
+  display: flex;
+}
+
+
 .main-header {
   background-color: #2f303a;
   display: block;
@@ -82,7 +99,7 @@ body {
   line-height: 1.9;
   align-items: center;
   text-align: center;
-  letter-spacing: 0,06em;
+  letter-spacing: 0, 06em;
   color: #ffffff;
   text-transform: none;
   width: 200px;
@@ -136,8 +153,8 @@ body {
   line-height: 1.7;
   color: #ffffff;
 }
-.address{
-margin: 20px 0px 10px 0px;
+.address {
+  margin: 20px 0px 10px 0px;
 }
 .footer-contact {
   font-weight: 400;
@@ -167,9 +184,9 @@ margin: 20px 0px 10px 0px;
   color: var(--main-color, black);
   cursor: pointer;
   padding: 5px 10px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   border-radius: 4px;
-  border-color: #F5F4FA;
+  border-color: #f5f4fa;
 }
 .button:hover,
 .button:focus {
@@ -177,7 +194,8 @@ margin: 20px 0px 10px 0px;
   color: #ffffff;
   background-color: var(--brand-blue, blue);
   border-color: var(--brand-blue, blue);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .product-card {
   box-sizing: border-box;
@@ -198,6 +216,6 @@ margin: 20px 0px 10px 0px;
   gap: 15px;
   row-gap: 30px;
 }
-.portfolio-main>.product-buttons{
-  margin-bottom:50px;
+.portfolio-main > .product-buttons {
+  margin-bottom: 50px;
 }
