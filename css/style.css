@@ -19,7 +19,7 @@ body {
 .list {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 0;
 }
@@ -34,6 +34,7 @@ body {
   border-bottom: 1px solid #ececec;
   display: flex;
   justify-content: space-between;
+  height: 80px;
 }
 
 .logo {
@@ -63,7 +64,7 @@ body {
 .nav-links :focus {
   color: var(--brand-blue, blue);
 }
-.nav-list-contacts{
+.nav-list-contacts {
   align-items: center;
   list-style: none;
 }
@@ -77,10 +78,9 @@ body {
 .nav-contact:focus {
   color: var(--brand-blue, blue);
 }
-.nav-list-contacts{
+.nav-list-contacts {
   display: flex;
 }
-
 
 .main-header {
   background-color: #2f303a;
@@ -88,7 +88,7 @@ body {
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
+  line-height: 60px;
   text-align: center;
   letter-spacing: 0, 06em;
   text-transform: uppercase;
@@ -106,7 +106,8 @@ body {
   height: 50px;
   background-color: var(--brand-blue, blue);
   border-radius: 4px;
-  border-color: var(--brand-blue, blue);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .first-section {
@@ -131,7 +132,6 @@ body {
 }
 .our-team {
   background-color: #f5f4fa;
-  background-size: 1600px 648px;
 }
 .card {
   background-color: #ffffff;
@@ -185,8 +185,8 @@ body {
   cursor: pointer;
   padding: 5px 10px;
   background-color: #f5f4fa;
+  border: none;
   border-radius: 4px;
-  border-color: #f5f4fa;
 }
 .button:hover,
 .button:focus {
@@ -212,10 +212,9 @@ body {
   color: var(--main-color, black);
   margin-left: 15px;
 }
-.product-card-property{
+.product-card-property {
   margin-left: 15px;
 }
- 
 
 .section-products > .container {
   flex-wrap: wrap;
